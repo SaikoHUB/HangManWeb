@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramètres du Jeu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #004d40; /* Vert foncé */
+            color: #ecf0f1; /* Blanc */
+        }
+
+        h1 {
+            color: #27ae60; /* Vert */
+        }
+
+        #settings {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        #background-options {
+            margin-bottom: 20px;
+            color: #333; /* Couleur du texte modifiée */
+        }
+
+        .background-option {
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .background-option img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .background-option:hover {
+            transform: scale(1.1);
+        }
+
+        .background-option:hover img {
+            border: 2px solid #27ae60; /* Vert plus foncé au survol */
+        }
+
+        #about-project {
+            background-color: #27ae60; /* Vert */
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="menu.html" id="logo"><img src="votre-logo.png" alt="Logo"></a>
+
+    <h1>Paramètres du Jeu</h1>
+
+    <div id="settings">
+        <div id="background-options">
+            <h2>Choisissez le Fond de l'Arrière-plan :</h2>
+            <div class="background-option">
+                <img src="background1.jpg" alt="Fond 1">
+            </div>
+            <div class="background-option">
+                <img src="background2.jpg" alt="Fond 2">
+            </div>
+            <div class="background-option">
+                <img src="background3.jpg" alt="Fond 3">
+            </div>
+        </div>
+
+        <div id="about-project">
+            <h2>À Propos du Projet :</h2>
+            <p>
+                Bienvenue dans notre jeu du Pendu ! Ce projet a été réalisé par Julien et JB dans le cadre d'un projet noté en cours qui se nomme HangManWeb.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
